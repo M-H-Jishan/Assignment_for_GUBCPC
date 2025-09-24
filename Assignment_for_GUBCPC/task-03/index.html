@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Contests Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-trophy"></i> Codeforces Contests</h1>
+            <p class="subtitle">Stay updated with upcoming programming contests</p>
+        </header>
+
+        <div class="controls">
+            <button id="refreshBtn" class="btn btn-primary">
+                <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+            <div class="filter-controls">
+                <label for="contestFilter">Show:</label>
+                <select id="contestFilter" class="filter-select">
+                    <option value="upcoming">Upcoming Contests</option>
+                    <option value="past">Past Contests</option>
+                    <option value="all">All Contests</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="loading" id="loadingSpinner">
+            <div class="spinner"></div>
+            <p>Loading contests...</p>
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span id="errorText"></span>
+        </div>
+
+        <div class="contests-section">
+            <div class="section-header">
+                <h2 id="sectionTitle">Upcoming Contests</h2>
+                <span class="contest-count" id="contestCount">0 contests</span>
+            </div>
+            
+            <div class="contests-grid" id="contestsContainer">
+                <!-- Contests will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <div class="notification-status" id="notificationStatus" style="display: none;">
+            <i class="fas fa-bell"></i>
+            <span>Notifications enabled for reminders</span>
+        </div>
+    </div>
+
+    <!-- Contest Card Template -->
+    <template id="contestCardTemplate">
+        <div class="contest-card">
+            <div class="contest-header">
+                <h3 class="contest-name"></h3>
+                <span class="contest-phase"></span>
+            </div>
+            
+            <div class="contest-details">
+                <div class="detail-item">
+                    <i class="fas fa-calendar"></i>
+                    <span class="contest-date"></span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span class="contest-duration"></span>
+                </div>
+                <div class="detail-item countdown-item" style="display: none;">
+                    <i class="fas fa-hourglass-half"></i>
+                    <span class="countdown-timer"></span>
+                </div>
+            </div>
+            
+            <div class="contest-actions">
+                <button class="btn btn-reminder" onclick="setReminder(this)">
+                    <i class="fas fa-bell"></i> Set Reminder
+                </button>
+                <a class="btn btn-link" target="_blank" rel="noopener">
+                    <i class="fas fa-external-link-alt"></i> View Contest
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

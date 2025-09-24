@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "user_id": "alice",
+    "problem_title": "Two Sum",
+    "problem_url": "https://leetcode.com/problems/two-sum/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Used hash map for O(n) solution",
+    "solved_at": "2025-09-23T23:12:37.586978"
+  },
+  {
+    "id": 2,
+    "user_id": "alice",
+    "problem_title": "Valid Parentheses",
+    "problem_url": "https://leetcode.com/problems/valid-parentheses/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Stack-based approach",
+    "solved_at": "2025-09-23T23:12:39.640368"
+  },
+  {
+    "id": 3,
+    "user_id": "bob",
+    "problem_title": "Binary Search",
+    "problem_url": "https://leetcode.com/problems/binary-search/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Classic binary search implementation",
+    "solved_at": "2025-09-23T23:12:41.670411"
+  },
+  {
+    "id": 4,
+    "user_id": "alice",
+    "problem_title": "Two Sum",
+    "problem_url": "https://leetcode.com/problems/two-sum/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Used hash map for O(n) solution",
+    "solved_at": "2025-09-23T23:13:21.968571"
+  },
+  {
+    "id": 5,
+    "user_id": "alice",
+    "problem_title": "Valid Parentheses",
+    "problem_url": "https://leetcode.com/problems/valid-parentheses/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Stack-based approach",
+    "solved_at": "2025-09-23T23:13:24.018110"
+  },
+  {
+    "id": 6,
+    "user_id": "bob",
+    "problem_title": "Binary Search",
+    "problem_url": "https://leetcode.com/problems/binary-search/",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "notes": "Classic binary search implementation",
+    "solved_at": "2025-09-23T23:13:26.086676"
+  },
+  {
+    "id": 7,
+    "user_id": "cache_test_user",
+    "problem_title": "Cache Test Problem",
+    "problem_url": "https://example.com/problem",
+    "difficulty": "Easy",
+    "platform": "TestPlatform",
+    "notes": "Testing cache functionality",
+    "solved_at": "2025-09-24T10:08:55.054589"
+  },
+  {
+    "id": 8,
+    "user_id": "cache_test_user",
+    "problem_title": "Cache Invalidation Test",
+    "problem_url": "https://example.com/problem2",
+    "difficulty": "Medium",
+    "platform": "TestPlatform",
+    "notes": "Testing cache invalidation",
+    "solved_at": "2025-09-24T10:09:01.171898"
+  }
+]
