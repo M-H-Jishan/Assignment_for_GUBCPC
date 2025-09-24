@@ -128,7 +128,8 @@ Each task includes comprehensive testing:
 
 ## Author
 
-**Moynul Hasan Jishan**  
+**Moynul Hasan Jishan**
+Dept. of Software Engineering
 Green University of Bangladesh
 
 ## License
